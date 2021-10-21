@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Work Exposure</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,300i,400,400i,600i,700,800');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Fredericka the Great', cursive;
+            font-weight: 400;
+            font-size: 3em;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+       
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 5px solid #cbd8b6;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+      
+        .left {
+            left: 0;
+        }
+
+
+        .right {
+            left: 50%;
+        }
+
+       
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid #e2f0cb;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #e2f0cb;
+        }
+
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid #e2f0cb;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #e2f0cb transparent transparent;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+
+  
+        .content {
+            padding: 20px 30px;
+            background-color: #e2f0cb;
+            position: relative;
+            border-radius: 14px;
+        }
+        a {
+            color: black;
+        }
+
+        strong {
+            font-size: large;
+        }
+        #logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        
+
+        nav {
+            padding: 10px;
+            background-color: #e2f0cb;
+            height: 70px;
+            margin: auto;
+
+        }
+
+        .items {
+            text-decoration: none;
+            float: right;
+            padding: 15px 10px;
+            font-weight: bold;
+        }
+
+        footer {
+      
+            padding: 10px;
+            margin-top: 60px;
+            width: 100%;
+            text-align: center;
+            background-color: #e2f0cb;
+        }
+
+        @media screen and (max-width: 800px) {
+
+       
+            .timeline::after {
+                left: 31px;
+            }
+
+
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+        
+            .container::before {
+                left: 60px;
+                border: medium solid #e2f0cb;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent #e2f0cb transparent transparent;
+            }
+
+            .left::after,
+            .right::after {
+                left: 15px;
+            }
+
+           
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <img id="logo" src="logo.png" alt="">
+            <a class="items" href="dart.html">Graphic Designs</a>
+            <a class="items" href="art.html">Sketches & Paintings</a>
+            <a class="items" href="research_paper.html">Research</a>
+            <a class="items" href="workexp.html">Work Exposure</a>
+            <a class="items" href="project.html">Projects</a>
+
+            <a class="items" href="index.html">Home</a>
+        </nav>
+      </div> 
+<H1>.WORK EXPOSURE</H1>
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <strong>Front-end Developer at Backdrop.AI</strong><br>
+                <i>April 2021 - Present</i>
+                <p>My responsibility is to create website's main page and subpages with HTML, CSS, JavaScript, and
+                    ReactJS
+                    for editing images and video background application using deep learning.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <strong>Front-end Developer and Graphic Designer at AIMV</strong><br>
+                <i>December 2020 - September 2021</i>
+                <p> As a part of web development team I assisted in the creation of the website from scratch. The
+                    complete website is created using HTML, CSS and JavaScript. I was responsible for updating the
+                    website
+                    time to time. I was also a part of graphic design team where I designed the logo of the conference
+                    and the certificates.</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <strong>Web Developer Intern at PATTERNS</strong><br>
+                <i>June 2021 - August 2021</i>
+                <p> Completed a one-month web development training program. Over the next month, I interacted with the
+                    UI/UX team and
+                    built a blogging website for a customer using HTML, CSS, JavaScript, jQuery, PHP, Node JS, MongoDB,
+                    and Bootstrap.
+
+                </p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <strong>Web Development Intern at The Spark Foundation</strong><br>
+                <i>February 2021 - March 2021</i>
+                <p>Created a dynamic banking website with HTML, CSS, JavaScript, PHP, and MySQL that allows registered
+                    bank
+                    members to transfer money from one person to another and shows the log of transaction made in the
+                    bank</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <strong>Graphic Designer at GirlScript Summer of Code</strong><br>
+                <i>January 2021 - June 2021</i>
+                <p> As a part of Graphic design team I designed flyers, posters, posts, stories, presentations, and all
+                    the necessary graphics for the entire event of GirlScript Summer of Code.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <strong>Graphic Design intern at Hyperzep infotech Pvt. Ltd. </strong><br>
+                <i>February 2021 - May 2021</i>
+                <p>As a part of Graphic design team I designed graphics for t-shirts and hoodies. I also made flyers, posts, stories, and logos for the clients of the company.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2021 Shreya Patel 
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,300i,400,400i,600i,700,800');
+
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .imp {
+            width: 90%;
+            height: 90%;
+            margin-top: 20px;
+
+        }
+
+        #container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 70px 1fr 40px;
+            grid-template-areas:
+                " nav "
+                " main1 "
+                "footer ";
+        }
+
+        #iloveto {
+            grid-area: iloveto;
+            height: 70px;
+            width: auto;
+            text-align: center;
+            margin: auto;
+            text-align: center;
+            font-family: 'Fredericka the Great', cursive;
+            font-weight: 400;
+            font-size: 4em;
+        }
+
+        a {
+            color: black;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        #main1 {
+            grid-area: main1;
+            text-align: center;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80px 1fr;
+            grid-template-areas:
+                " iloveto iloveto iloveto"
+                " code painting basketball ";
+
+        }
+
+        #code {
+            grid-area: code;
+        }
+
+        #painting {
+            grid-area: painting;
+        }
+
+        #basketball {
+            grid-area: basketball;
+        }
+
+        nav {
+            grid-area: nav;
+            padding: 10px;
+            background-color: #e2f0cb;
+        }
+
+        .items {
+            text-decoration: none;
+            float: right;
+            padding: 15px 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            grid-area: footer;
+            padding: 10px;
+            text-align: center;
+            background-color: #e2f0cb;
+        }
+
+
+
+
+        @media only screen and (max-width: 800px) {
+
+            .items {
+                display: none;
+            }
+
+            #main1 {
+                grid-area: main1;
+                text-align: center;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 80px 1fr 1fr 1fr;
+                grid-template-areas:
+                    " iloveto "
+                    " code  "
+                    "painting"
+                    " basketball ";
+            }
+
+            @media only screen and (max-width: 600px) {
+                .imp {
+                    width: 90%;
+                    height: 95%;
+                    margin-bottom: 20px;
+                }
+
+                #main1 {
+                    padding-top: 30px;
+                }
+
+            }
+
+            @media only screen and (max-width: 400px) {
+                #iloveto {
+                    font-size: 3.5rem;
+                }
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <img id="logo" src="logo.png" alt="">
+            <a class="items" href="dart.html">Graphic Designs</a>
+            <a class="items" href="art.html">Sketches & Paintings</a>
+            <a class="items" href="research_paper.html">Research</a>
+            <a class="items" href="workexp.html">Work Exposure</a>
+            <a class="items" href="project.html">Projects</a>
+            <a class="items" href="index.html">Home</a>
+
+        </nav>
+
+        <div id="main1">
+            <div id="iloveto"> I LOVE TO</div>
+            <br>
+            <br>
+
+
+            <div id="code">
+                <img class="imp" src="1.png" alt="">
+
+            </div>
+
+            <div id="painting">
+                <img class="imp" src="3.png" alt="">
+
+            </div>
+
+            <div id="basketball">
+                <img class="imp" src="2.png" alt="">
+
+            </div>
+
+        </div>
+        <footer>
+            © 2021 Shreya Patel
+        </footer>
+    </div>
+
+</html>

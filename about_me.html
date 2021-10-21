@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        a {
+            color: black;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+       #my_img{
+           width:250px;
+           height:250px;
+           margin: auto;
+           border-radius: 100%;
+       }
+
+        nav {
+            padding: 10px;
+            background-color: #e2f0cb;
+            height: 50px;
+            margin: auto;
+
+        }
+
+        .items {
+            text-decoration: none;
+            float: right;
+            padding: 15px 10px
+        }
+        #flex-container{
+            display: flex;
+            margin:auto;
+            padding:10px;
+        }
+
+        footer {
+            position: fixed;
+            padding: 10px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #e2f0cb;
+        }
+
+        @media only screen and (min-width: 2500px) {}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <img id="logo" src="logo.png" alt="">
+            <a class="items" href="dart.html">Graphic Designs</a>
+            <a class="items" href="art.html">Sketches & Paintings</a>
+            <a class="items" href="research_paper.html">Research</a>
+            <a class="items" href="workexp.html">Work Exposure</a>
+            <a class="items" href="project.html">Projects</a>
+            <a class="items" href="">About Me</a>
+            <a class="items" href="index.html">Home</a>
+        </nav>
+        <div id="flex-container">
+           <img id="my_img" src="shreya.png" alt="">
+            <div id="about"></div>
+
+        </div>
+        <footer>
+            © 2021 Shreya Patel
+        </footer>
+    </div>
+
+</html>
