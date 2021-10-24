@@ -68,6 +68,7 @@
       height: 50px;
       border-radius: 100%;
       box-shadow: none;
+      border:none;
     }
 
 
@@ -96,6 +97,65 @@
       text-align: center;
       background-color: #e2f0cb;
     }
+    .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color:#e2f0cb;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 20px 0px 10px 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            font-size: 36px;
+            
+        }
+
+        .openbtn {
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #e2f0cb;
+            color: black;
+            padding: 0px 5px;
+            border: none;
+            float: right;
+            display: none;
+        }
+        @media only screen and (min-width: 801px){
+            .openbtn {
+                display: none;
+            }
+            .sidebar{
+                display:none;
+            }
+        }
+        @media only screen and (max-width: 800px) {
+
+.items {
+    display: none;
+}
+
+.openbtn {
+    display: block;
+}
+        }
 
     @media only screen and (max-width: 600px) {
 
@@ -123,8 +183,17 @@
       <a class="items" href="research_paper.html">Research</a>
       <a class="items" href="workexp.html">Work Exposure</a>
       <a class="items" href="project.html">Projects</a>
-    
       <a class="items" href="index.html">Home</a>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="workexp.html">Work Exposure</a>
+        <a href="research_paper.html">Research</a>
+        <a href="art.html">Sketches & Paintings</a>
+        <a href="dart.html">Graphic Designs</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰</button>
     </nav>
   </div>
   <H1>.GRAPHIC DESIGNS</H1>
@@ -136,18 +205,18 @@
       <img src="dart/10.png" style="width:100%">
       <img src="dart/4.png" style="width:100%">
       <img src="dart/5.png" style="width:100%">
-      <img src="dart/6.png" style="width:100%">
+      <img src="dart/6.PNG" style="width:100%">
       <img src="dart/7.png" style="width:100%">
 
 
     </div>
     <div class="column">
-      <img src="dart/12.png" style="width:100%">
+      <img src="dart/12.PNG" style="width:100%">
       <img src="dart/9.png" style="width:100%">
       <img src="dart/3.png" style="width:100%">
       <img src="dart/28.png" style="width:100%">
       <img src="dart/11.png" style="width:100%">
-      <img src="dart/8.png" style="width:100%">
+      <img src="dart/8.PNG" style="width:100%">
       <img src="dart/29.png" style="width:100%">
 
     </div>
@@ -174,6 +243,15 @@
   <footer>
     © 2021 Shreya Patel
   </footer>
+  <script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "200px";  
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+</script>
 </body>
 
 </html>
