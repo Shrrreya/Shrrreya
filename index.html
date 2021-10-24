@@ -86,6 +86,7 @@
             grid-area: nav;
             padding: 10px;
             background-color: #e2f0cb;
+
         }
 
         .items {
@@ -101,6 +102,7 @@
             text-align: center;
             background-color: #e2f0cb;
         }
+
         .sidebar {
             height: 100%;
             width: 0;
@@ -108,7 +110,7 @@
             z-index: 1;
             top: 0;
             right: 0;
-            background-color:#e2f0cb;
+            background-color: #e2f0cb;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -128,7 +130,7 @@
             top: -10px;
             left: 0;
             font-size: 36px;
-            
+
         }
 
         .openbtn {
@@ -142,22 +144,25 @@
             float: right;
             display: none;
         }
-        @media only screen and (min-width: 801px){
+
+        @media only screen and (min-width: 801px) {
             .openbtn {
                 display: none;
             }
-            .sidebar{
-                display:none;
+
+            .sidebar {
+                display: none;
             }
         }
-
-
-
 
         @media only screen and (max-width: 800px) {
 
             .items {
                 display: none;
+            }
+
+            .openbtn {
+                display: block;
             }
 
             #main1 {
@@ -219,7 +224,9 @@
             </div>
             <button class="openbtn" onclick="openNav()">☰</button>
 
+
         </nav>
+
 
         <div id="main1">
             <div id="iloveto"> I LOVE TO</div>
@@ -247,9 +254,9 @@
             © 2021 Shreya Patel
         </footer>
     </div>
-       <script>
+    <script>
         function openNav() {
-            document.getElementById("mySidebar").style.width = "200px";  
+            document.getElementById("mySidebar").style.width = "200px";
         }
 
         function closeNav() {
@@ -257,4 +264,5 @@
         }
     </script>
 </body>
+
 </html>
