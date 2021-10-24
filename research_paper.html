@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rsearch Papers</title>
     <style>
-         @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,300i,400,400i,600i,700,800');
+        @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,300i,400,400i,600i,700,800');
 
         body {
             font-family: Helvetica, sans-serif;
@@ -27,8 +27,8 @@
             box-shadow: inset 10px 10px 20px #c4cfb1;
 
         }
-       
-        h1{
+
+        h1 {
             text-align: center;
             font-family: 'Fredericka the Great', cursive;
             font-weight: 400;
@@ -40,7 +40,7 @@
             padding: 10px 60px;
             border-radius: 20px;
             margin: 10px;
-            background-image: linear-gradient(to right,white , #e2f0cb);
+            background-image: linear-gradient(to right, white, #e2f0cb);
 
         }
 
@@ -61,13 +61,15 @@
             text-decoration: none;
             border-radius: 10px;
         }
+
         #logo {
             width: 50px;
             height: 50px;
             border-radius: 100%;
+            float: left;
         }
 
-        
+
 
         nav {
             padding: 10px;
@@ -85,13 +87,14 @@
         }
 
         footer {
-         
-            padding: 10px;
+
+            padding: 10px 0px;
             margin-top: 50px;
             width: 100%;
             text-align: center;
             background-color: #e2f0cb;
         }
+
         .sidebar {
             height: 100%;
             width: 0;
@@ -99,7 +102,7 @@
             z-index: 1;
             top: 0;
             right: 0;
-            background-color:#e2f0cb;
+            background-color: #e2f0cb;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -112,6 +115,7 @@
             color: black;
             display: block;
             transition: 0.3s;
+            text-align: left;
         }
 
         .sidebar .closebtn {
@@ -119,7 +123,7 @@
             top: -10px;
             left: 0;
             font-size: 36px;
-            
+
         }
 
         .openbtn {
@@ -133,12 +137,14 @@
             float: right;
             display: none;
         }
-        @media only screen and (min-width: 801px){
+
+        @media only screen and (min-width: 801px) {
             .openbtn {
                 display: none;
             }
-            .sidebar{
-                display:none;
+
+            .sidebar {
+                display: none;
             }
         }
 
@@ -152,6 +158,17 @@
             }
         }
 
+        @media only screen and (max-width: 800px) {
+
+            .items {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+        }
+
         @media only screen and (max-width: 850px) {
             body {
                 text-align: center;
@@ -160,6 +177,10 @@
             img {
                 margin: auto;
 
+            }
+
+            #logo {
+                margin: none;
             }
 
             .flex-container {
@@ -186,8 +207,7 @@
             <a class="items" href="research_paper.html">Research</a>
             <a class="items" href="workexp.html">Work Exposure</a>
             <a class="items" href="project.html">Projects</a>
-         
-            <a class="items" href="index.html">Home</a
+            <a class="items" href="index.html">Home</a>
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="index.html">Home</a>
@@ -197,9 +217,9 @@
                 <a href="art.html">Sketches & Paintings</a>
                 <a href="dart.html">Graphic Designs</a>
             </div>
-            <button class="openbtn" onclick="openNav()">☰</button>    
+            <button class="openbtn" onclick="openNav()">☰</button>
         </nav>
-    </div>      
+    </div>
     <h1>.RESEARCH PAPERS</h1>
     <div id="p3" class="flex-container">
         <img src="img/10.png" alt="">
@@ -208,13 +228,15 @@
             <p>
                 The paper presents an efficient analysis that detects aspects of criminal occurrences, providing a
                 combinatorial incident description schema that will assist police in detecting patterns and trends for
-                forecasting new crime, establishing relationships, and probable explanations. Furthermore, it will provide
-                analysis between to time frame which will provide the officer more clear idea about which statergy is more 
+                forecasting new crime, establishing relationships, and probable explanations. Furthermore, it will
+                provide
+                analysis between to time frame which will provide the officer more clear idea about which statergy is
+                more
                 effective in that area.
             </p>
             <p> STATUS: Work in Progress</p>
             <br>
-            
+
         </div>
     </div>
 
@@ -231,7 +253,8 @@
             </p>
             <p> STATUS: Accepted and Presented at AIMV 2021 and will be published in IEEE Digital Library </p>
             <br>
-            <a class="buttons" href="https://drive.google.com/file/d/1Mx58b9xqGe2bUKKEYLYvcsovg2Lq8zTK/view" target="_blank">Github
+            <a class="buttons" href="https://drive.google.com/file/d/1Mx58b9xqGe2bUKKEYLYvcsovg2Lq8zTK/view"
+                target="_blank">Github
                 Link</a>
         </div>
     </div>
@@ -248,22 +271,24 @@
             </p>
             <p> STATUS: Accepted and Presented at AIMV 2021 and will be published in IEEE Digital Library </p>
             <br>
-            <a class="buttons" href="https://drive.google.com/file/d/1ch7WA9jLcRUTP6FBhOXuhohnr8HATd8g/view" target="_blank">Github
+            <a class="buttons" href="https://drive.google.com/file/d/1ch7WA9jLcRUTP6FBhOXuhohnr8HATd8g/view"
+                target="_blank">Github
                 Link</a>
         </div>
     </div>
     <footer>
-   © 2021 Shreya Patel 
-</footer>
+        © 2021 Shreya Patel
+    </footer>
     <script>
         function openNav() {
-            document.getElementById("mySidebar").style.width = "200px";  
+            document.getElementById("mySidebar").style.width = "200px";
         }
 
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
         }
     </script>
+
 </body>
 
 
