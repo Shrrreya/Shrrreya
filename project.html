@@ -8,20 +8,23 @@
     <title>Projects</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,300i,400,400i,600i,700,800');
+
         body {
             font-family: Helvetica, sans-serif;
             margin: 0px;
             padding: 0px;
         }
-        h1{
+
+        h1 {
             text-align: center;
             font-family: 'Fredericka the Great', cursive;
 
-    color: #171717;
-    font-weight: 400;
+            color: #171717;
+            font-weight: 400;
 
-    font-size: 3em;
+            font-size: 3em;
         }
+
         img {
             height: 300px;
             width: 300px;
@@ -41,7 +44,7 @@
             padding: 10px 60px;
             border-radius: 20px;
             margin: 10px;
-            background-image: linear-gradient(to right,white , #e2f0cb);
+            background-image: linear-gradient(to right, white, #e2f0cb);
 
         }
 
@@ -49,14 +52,14 @@
             font-size: large;
             padding: 10px 10px 10px 50px;
             margin: auto;
-           
-     
+
+
         }
 
         strong {
             font-size: x-large;
-           
-            
+
+
         }
 
         a {
@@ -66,13 +69,15 @@
             text-decoration: none;
             border-radius: 10px;
         }
+
         #logo {
             width: 50px;
             height: 50px;
             border-radius: 100%;
+            float: left;
         }
 
-        
+
 
         nav {
             padding: 10px;
@@ -90,13 +95,14 @@
         }
 
         footer {
-          
-            padding: 10px;
+
+            padding: 10px 0px;
             margin-top: 50px;
             width: 100%;
             text-align: center;
             background-color: #e2f0cb;
         }
+
         .sidebar {
             height: 100%;
             width: 0;
@@ -104,7 +110,7 @@
             z-index: 1;
             top: 0;
             right: 0;
-            background-color:#e2f0cb;
+            background-color: #e2f0cb;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -117,6 +123,7 @@
             color: black;
             display: block;
             transition: 0.3s;
+            text-align: left;
         }
 
         .sidebar .closebtn {
@@ -124,7 +131,7 @@
             top: -10px;
             left: 0;
             font-size: 36px;
-            
+
         }
 
         .openbtn {
@@ -138,12 +145,14 @@
             float: right;
             display: none;
         }
-        @media only screen and (min-width: 801px){
+
+        @media only screen and (min-width: 801px) {
             .openbtn {
                 display: none;
             }
-            .sidebar{
-                display:none;
+
+            .sidebar {
+                display: none;
             }
         }
 
@@ -157,6 +166,17 @@
             }
         }
 
+        @media only screen and (max-width: 800px) {
+
+            .items {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+        }
+
         @media only screen and (max-width: 850px) {
             body {
                 text-align: center;
@@ -166,6 +186,11 @@
                 margin: auto;
 
             }
+
+            #logo {
+                margin: none;
+            }
+
 
             .flex-container {
 
@@ -191,9 +216,8 @@
             <a class="items" href="research_paper.html">Research</a>
             <a class="items" href="workexp.html">Work Exposure</a>
             <a class="items" href="project.html">Projects</a>
-
             <a class="items" href="index.html">Home</a>
-             <div id="mySidebar" class="sidebar">
+            <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="index.html">Home</a>
                 <a href="project.html">Projects</a>
@@ -231,7 +255,8 @@
                 The entire procedure is clearly illustrated for the input provided by the user.
             </p>
             <br>
-            <a  class="buttons" href="https://github.com/Shrrreya/cpu-scheduling-algorithms" target="_blank">Github Link</a>
+            <a class="buttons" href="https://github.com/Shrrreya/cpu-scheduling-algorithms" target="_blank">Github
+                Link</a>
         </div>
     </div>
 
@@ -298,11 +323,11 @@
         </div>
     </div>
     <footer>
-   © 2021 Shreya Patel 
-</footer>
-      <script>
+        © 2021 Shreya Patel
+    </footer>
+    <script>
         function openNav() {
-            document.getElementById("mySidebar").style.width = "200px";  
+            document.getElementById("mySidebar").style.width = "200px";
         }
 
         function closeNav() {
@@ -310,4 +335,6 @@
         }
     </script>
 </body>
+
+
 </html>
