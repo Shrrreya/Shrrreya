@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Work Exposure</title>
     <style>
-         @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,300i,400,400i,600i,700,800');
+        @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans:300,300i,400,400i,600i,700,800');
 
         * {
             box-sizing: border-box;
@@ -19,7 +19,8 @@
             margin: 0px;
             padding: 0px;
         }
-        h1{
+
+        h1 {
             text-align: center;
             font-family: 'Fredericka the Great', cursive;
             font-weight: 400;
@@ -51,7 +52,7 @@
             width: 50%;
         }
 
-       
+
         .container::after {
             content: '';
             position: absolute;
@@ -65,7 +66,7 @@
             z-index: 1;
         }
 
-      
+
         .left {
             left: 0;
         }
@@ -75,7 +76,7 @@
             left: 50%;
         }
 
-       
+
         .left::before {
             content: " ";
             height: 0;
@@ -107,13 +108,14 @@
             left: -16px;
         }
 
-  
+
         .content {
             padding: 20px 30px;
             background-color: #e2f0cb;
             position: relative;
             border-radius: 14px;
         }
+
         a {
             color: black;
         }
@@ -121,13 +123,14 @@
         strong {
             font-size: large;
         }
+
         #logo {
             width: 50px;
             height: 50px;
             border-radius: 100%;
         }
 
-        
+
 
         nav {
             padding: 10px;
@@ -145,21 +148,22 @@
         }
 
         footer {
-      
+
             padding: 10px;
             margin-top: 60px;
             width: 100%;
             text-align: center;
             background-color: #e2f0cb;
         }
-                .sidebar {
+
+        .sidebar {
             height: 100%;
             width: 0;
             position: fixed;
             z-index: 1;
             top: 0;
             right: 0;
-            background-color:#e2f0cb;
+            background-color: #e2f0cb;
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -179,7 +183,7 @@
             top: -10px;
             left: 0;
             font-size: 36px;
-            
+
         }
 
         .openbtn {
@@ -193,17 +197,30 @@
             float: right;
             display: none;
         }
-        @media only screen and (min-width: 801px){
+
+        @media only screen and (min-width: 801px) {
             .openbtn {
                 display: none;
             }
-            .sidebar{
-                display:none;
+
+            .sidebar {
+                display: none;
             }
         }
+
         @media screen and (max-width: 800px) {
 
-       
+
+            .items {
+                display: none;
+            }
+
+            .openbtn {
+                display: block;
+            }
+
+
+
             .timeline::after {
                 left: 31px;
             }
@@ -215,7 +232,7 @@
                 padding-right: 25px;
             }
 
-        
+
             .container::before {
                 left: 60px;
                 border: medium solid #e2f0cb;
@@ -228,7 +245,7 @@
                 left: 15px;
             }
 
-           
+
             .right {
                 left: 0%;
             }
@@ -245,9 +262,8 @@
             <a class="items" href="research_paper.html">Research</a>
             <a class="items" href="workexp.html">Work Exposure</a>
             <a class="items" href="project.html">Projects</a>
-
             <a class="items" href="index.html">Home</a>
-                     <div id="mySidebar" class="sidebar">
+            <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="index.html">Home</a>
                 <a href="project.html">Projects</a>
@@ -258,8 +274,8 @@
             </div>
             <button class="openbtn" onclick="openNav()">☰</button>
         </nav>
-      </div> 
-<H1>.WORK EXPOSURE</H1>
+    </div>
+    <H1>.WORK EXPOSURE</H1>
     <div class="timeline">
         <div class="container left">
             <div class="content">
@@ -315,16 +331,17 @@
             <div class="content">
                 <strong>Graphic Design intern at Hyperzep infotech Pvt. Ltd. </strong><br>
                 <i>February 2021 - May 2021</i>
-                <p>As a part of Graphic design team I designed graphics for t-shirts and hoodies. I also made flyers, posts, stories, and logos for the clients of the company.</p>
+                <p>As a part of Graphic design team I designed graphics for t-shirts and hoodies. I also made flyers,
+                    posts, stories, and logos for the clients of the company.</p>
             </div>
         </div>
     </div>
     <footer>
-        © 2021 Shreya Patel 
-    </footer
-          <script>
+        © 2021 Shreya Patel
+    </footer>
+    <script>
         function openNav() {
-            document.getElementById("mySidebar").style.width = "200px";  
+            document.getElementById("mySidebar").style.width = "200px";
         }
 
         function closeNav() {
